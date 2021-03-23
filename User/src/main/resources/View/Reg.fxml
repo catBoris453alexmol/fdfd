@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="403.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sapteh.controllers.UserController">
+    <children>
+        <Button fx:id="buttonSignIn" layoutX="310.0" layoutY="324.0" mnemonicParsing="false" onAction="#SignIn" prefHeight="36.0" prefWidth="98.0" text="Вход" />
+        <Button fx:id="buttonSignUp" layoutX="630.0" layoutY="324.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="36.0" prefWidth="135.0" text="Регистрация" />
+        <PasswordField fx:id="txtPass" layoutX="481.0" layoutY="217.0" />
+        <TextField fx:id="txtLogin" layoutX="481.0" layoutY="159.0" />
+        <Label layoutX="359.0" layoutY="158.0" prefHeight="25.0" prefWidth="59.0" text="Login:">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label layoutX="347.0" layoutY="216.0" prefHeight="27.0" prefWidth="84.0" text="Password:">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label fx:id="lblInfo" alignment="TOP_LEFT" layoutX="115.0" layoutY="76.0" prefHeight="27.0" prefWidth="715.0" text="Status:">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f50303" height="403.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="319.0" layoutY="14.0" prefHeight="51.0" prefWidth="162.0" text="Войти:" textFill="#fc02b1">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
